@@ -22,6 +22,14 @@ for file in files:
 pp.pprint(file_list)
 pp.pprint(dir_list)
 
+########################
+def file_name_filter(path=""):
+   
+    if( os.path.basename(path).find('Excep') == -1):
+        return False
+    else:
+        return True
+
 
 
 ## reformat
