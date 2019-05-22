@@ -1,6 +1,6 @@
 """parse logs with exceptions"""
 import datetime
-from . import ParsedIncident
+from .parsed_incident import ParsedIncident
 
 
 class ExceptionParser:
