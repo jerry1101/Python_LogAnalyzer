@@ -1,0 +1,106 @@
+4/12/2019 7:13:39 AM : 
+4/12/2019 7:13:39 AM : ----------------------------------------------------------
+Exception in Persist Operation Update.
+
+   at TotalWine.Framework.BusinessLogic.BusinessLogicBase`2.Persist(T businessBase, U procedureName, DbConnection dbConnection, PersistType persistType) in F:\B\A\CAT\CI2\_work\12\s\TotalWine.Framework\TotalWine.Framework\BusinessLogic\BusinessLogicBase.cs:line 228
+   at TotalWine.Services.BusinessLayer.BusinessFacade.CostChange.SupplyCostRepository.AddOrUpdate(SupplyCost supplyCost, SqlConnection sqlConnection) in F:\B\A\CAT\CI2\_work\12\s\Services\BusinessFacade\CostChange\SupplyCostRepository.cs:line 21
+   at TotalWine.Services.BusinessLayer.BusinessFacade.OrderManagementFacade.UpdateSupplyCost(SupplyCost supplyCost) in F:\B\A\CAT\CI2\_work\12\s\Services\BusinessFacade\OrderManagementFacade.cs:line 3654
+   at TotalWine.Services.BusinessLayer.BusinessFacade.VendorReportUploadProcessor.Process(List`1 rows) in F:\B\A\CAT\CI2\_work\12\s\Services\BusinessFacade\Uploads\VendorReports\VendorReportUploadProcessor.cs:line 150
+   at TotalWine.Services.BusinessLayer.BusinessFacade.VendorReportUploader.OnUpload(List`1 rows, UploadContext context) in F:\B\A\CAT\CI2\_work\12\s\Services\BusinessFacade\Uploads\VendorReports\VendorReportUploader.cs:line 59
+   at TotalWine.Services.BusinessLayer.BusinessFacade.Uploads.Base.SimpleUploaderBase`1.Upload(DataSet dataSet, UploadContext context) in F:\B\A\CAT\CI2\_work\12\s\Services\BusinessFacade\Uploads\Base\SimpleUploaderBase.cs:line 17
+   at TotalWine.Services.BusinessLayer.BusinessFacade.Uploads.UploadProcessor.ProcessUpload(Int32 uploadKey) in F:\B\A\CAT\CI2\_work\12\s\Services\BusinessFacade\Uploads\UploadProcessor.cs:line 75
+   at TotalWine.Services.ServiceImplementation.UploadService.ProcessUpload(ProcessUploadRequest request) in F:\B\A\CAT\CI2\_work\12\s\Services\ServiceImplementation\UploadService.cs:line 72
+   at TotalWine.Services.ServiceImplementation.SIPService.ProcessUpload(ProcessUploadRequest request) in F:\B\A\CAT\CI2\_work\12\s\Services\ServiceImplementation\ServiceFacades\SIPService.cs:line 2565
+
+
+************************************************************
+	BusinessObject : TotalWine.Services.BusinessLayer.BusinessObjects.SupplyCost
+	ProcedureName : apx_saveSupplyCost
+
+
+************************************************************
+
+4/12/2019 7:13:39 AM : 
+	*************************************************
+	INNER EXCEPTION 1
+	*************************************************
+Error converting data type datetime to smalldatetime.
+
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at TotalWine.Framework.DataAccess.DataAccessBase`2.CallPersist(T businessBase, U procedureName, DbConnection dbConnection, PersistType persistAction) in F:\B\A\CAT\CI2\_work\12\s\TotalWine.Framework\TotalWine.Framework\DataAccess\DataAccessBase.cs:line 273
+   at TotalWine.Framework.BusinessLogic.BusinessLogicBase`2.DoUpdate(T businessBase, U procedureName, DbConnection dbConnection) in F:\B\A\CAT\CI2\_work\12\s\TotalWine.Framework\TotalWine.Framework\BusinessLogic\BusinessLogicBase.cs:line 379
+   at TotalWine.Framework.BusinessLogic.BusinessLogicBase`2.DoPersist(T businessBase, U procedureName, DbConnection dbConnection, PersistType persistType) in F:\B\A\CAT\CI2\_work\12\s\TotalWine.Framework\TotalWine.Framework\BusinessLogic\BusinessLogicBase.cs:line 159
+   at TotalWine.Framework.BusinessLogic.BusinessLogicBase`2.Persist(T businessBase, U procedureName, DbConnection dbConnection, PersistType persistType) in F:\B\A\CAT\CI2\_work\12\s\TotalWine.Framework\TotalWine.Framework\BusinessLogic\BusinessLogicBase.cs:line 217
+
+
+************************************************************
+	HelpLink.ProdName : Microsoft SQL Server
+	HelpLink.ProdVer : 12.00.5546
+	HelpLink.EvtSrc : MSSQLServer
+	HelpLink.EvtID : 8114
+	HelpLink.BaseHelpUrl : http://go.microsoft.com/fwlink
+	HelpLink.LinkId : 20476
+
+
+************************************************************
+
+4/12/2019 7:17:37 AM : 
+4/12/2019 7:17:37 AM : ----------------------------------------------------------
+Exception in Persist Operation Update.
+
+   at TotalWine.Framework.BusinessLogic.BusinessLogicBase`2.Persist(T businessBase, U procedureName
+   at TotalWine.Framework.BusinessLogic.BusinessLogicBase`2.Persist(T businessBase, U procedureName, DbConnection dbConnection, PersistType persistType) in F:\B\A\CAT\CI2\_work\12\s\TotalWine.Framework\TotalWine.Framework\BusinessLogic\BusinessLogicBase.cs:line 228
+   at TotalWine.Services.BusinessLayer.BusinessFacade.CostChange.SupplyCostRepository.AddOrUpdate(SupplyCost supplyCost, SqlConnection sqlConnection) in F:\B\A\CAT\CI2\_work\12\s\Services\BusinessFacade\CostChange\SupplyCostRepository.cs:line 21
+   at TotalWine.Services.BusinessLayer.BusinessFacade.OrderManagementFacade.UpdateSupplyCost(SupplyCost supplyCost) in F:\B\A\CAT\CI2\_work\12\s\Services\BusinessFacade\OrderManagementFacade.cs:line 3654
+   at TotalWine.Services.BusinessLayer.BusinessFacade.VendorReportUploadProcessor.Process(List`1 rows) in F:\B\A\CAT\CI2\_work\12\s\Services\BusinessFacade\Uploads\VendorReports\VendorReportUploadProcessor.cs:line 150
+   at TotalWine.Services.BusinessLayer.BusinessFacade.VendorReportUploader.OnUpload(List`1 rows, UploadContext context) in F:\B\A\CAT\CI2\_work\12\s\Services\BusinessFacade\Uploads\VendorReports\VendorReportUploader.cs:line 59
+   at TotalWine.Services.BusinessLayer.BusinessFacade.Uploads.Base.SimpleUploaderBase`1.Upload(DataSet dataSet, UploadContext context) in F:\B\A\CAT\CI2\_work\12\s\Services\BusinessFacade\Uploads\Base\SimpleUploaderBase.cs:line 17
+   at TotalWine.Services.BusinessLayer.BusinessFacade.Uploads.UploadProcessor.ProcessUpload(Int32 uploadKey) in F:\B\A\CAT\CI2\_work\12\s\Services\BusinessFacade\Uploads\UploadProcessor.cs:line 75
+   at TotalWine.Services.ServiceImplementation.UploadService.ProcessUpload(ProcessUploadRequest request) in F:\B\A\CAT\CI2\_work\12\s\Services\ServiceImplementation\UploadService.cs:line 72
+   at TotalWine.Services.ServiceImplementation.SIPService.ProcessUpload(ProcessUploadRequest request) in F:\B\A\CAT\CI2\_work\12\s\Services\ServiceImplementation\ServiceFacades\SIPService.cs:line 2565
+
+
+************************************************************
+	BusinessObject : TotalWine.Services.BusinessLayer.BusinessObjects.SupplyCost
+	ProcedureName : apx_saveSupplyCost
+
+
+************************************************************
+
+4/12/2019 7:17:37 AM : 
+	*************************************************
+	INNER EXCEPTION 1
+	*************************************************
+Error converting data type datetime to smalldatetime.
+
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at TotalWine.Framework.DataAccess.DataAccessBase`2.CallPersist(T businessBase, U procedureName, DbConnection dbConnection, PersistType persistAction) in F:\B\A\CAT\CI2\_work\12\s\TotalWine.Framework\TotalWine.Framework\DataAccess\DataAccessBase.cs:line 273
+   at TotalWine.Framework.BusinessLogic.BusinessLogicBase`2.DoUpdate(T businessBase, U procedureName, DbConnection dbConnection) in F:\B\A\CAT\CI2\_work\12\s\TotalWine.Framework\TotalWine.Framework\BusinessLogic\BusinessLogicBase.cs:line 379
+   at TotalWine.Framework.BusinessLogic.BusinessLogicBase`2.DoPersist(T businessBase, U procedureName, DbConnection dbConnection, PersistType persistType) in F:\B\A\CAT\CI2\_work\12\s\TotalWine.Framework\TotalWine.Framework\BusinessLogic\BusinessLogicBase.cs:line 159
+   at TotalWine.Framework.BusinessLogic.BusinessLogicBase`2.Persist(T businessBase, U procedureName, DbConnection dbConnection, PersistType persistType) in F:\B\A\CAT\CI2\_work\12\s\TotalWine.Framework\TotalWine.Framework\BusinessLogic\BusinessLogicBase.cs:line 217
+
+
+************************************************************
+	HelpLink.ProdName : Microsoft SQL Server
+	HelpLink.ProdVer : 12.00.5546
+	HelpLink.EvtSrc : MSSQLServer
+	HelpLink.EvtID : 8114
+	HelpLink.BaseHelpUrl : http://go.microsoft.com/fwlink
+	HelpLink.LinkId : 20476
+
+
+************************************************************
